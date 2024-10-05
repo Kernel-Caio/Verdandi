@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="PresentationCore"/>
+    <Reference Include="PresentationFramework"/>
+    <Reference Include="WindowsBase"/>
+    <Reference Include="System.Xaml"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ampulheta.png" />
+    <None Remove="icons8-crachá-100.png" />
+    <None Remove="icons8-à-esquerda-dentro-de-um-círculo-50.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ampulheta.png" />
+    <Resource Include="icons8-crachá-100.png" />
+    <Resource Include="icons8-à-esquerda-dentro-de-um-círculo-50.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+  </ItemGroup>
+
+</Project>
